@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.ui-input label {
+  top: 0%;
+  transform: translateY(-50%);
+  font-size: 11px;
+  color: #52b788;
+}
+.ui-input.empty input:not(:focus) + label {
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
+}
+.ui-input input:not(:focus) + label {
+  color: rgba(70, 70, 70, 1);
+}
+.ui-input input {
+  border-width: 1px;
+}
+.ui-input input:focus {
+  outline: none;
+  border-color: #52b788;
+}
